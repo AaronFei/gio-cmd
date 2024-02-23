@@ -205,7 +205,7 @@ func (b *windowsBuilder) buildProgram(buildInfo *buildInfo, name string, arch st
 	cmd := exec.Command(
 		"go",
 		"build",
-		"-ldflags=-H=windowsgui "+buildInfo.ldflags,
+		"-ldflags= "+buildInfo.ldflags,
 		"-tags="+buildInfo.tags,
 		"-o", dest,
 		buildInfo.pkgPath,
