@@ -1,4 +1,4 @@
-module gioui.org/cmd
+module github.com/AaronFei/gio-cmd
 
 go 1.19
 
